@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Focus Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-card">
+      <p class="eyebrow">Practice Project</p>
+      <h1>Daily Focus Board</h1>
+      <p class="hero-copy">
+        A small project for learning Git, GitHub, and local updates. Add one main focus,
+        keep a few tasks, and save them in your browser.
+      </p>
+    </section>
+
+    <section class="board-grid">
+      <section class="panel">
+        <h2>Main Focus</h2>
+        <label for="focusInput">What matters most today?</label>
+        <input id="focusInput" type="text" placeholder="Example: Finish my GitHub practice">
+        <button id="saveFocusBtn" class="primary-btn">Save Focus</button>
+        <div id="focusDisplay" class="focus-display">No focus saved yet.</div>
+      </section>
+
+      <section class="panel">
+        <h2>Task List</h2>
+        <label for="taskInput">Add a small task</label>
+        <div class="task-row">
+          <input id="taskInput" type="text" placeholder="Example: Push first commit">
+          <button id="addTaskBtn" class="primary-btn">Add</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+    </section>
+
+    <section class="panel footer-panel">
+      <h2>Quick Actions</h2>
+      <div class="button-row">
+        <button id="clearDoneBtn">Remove Done Tasks</button>
+        <button id="resetBoardBtn" class="danger-btn">Reset Board</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
