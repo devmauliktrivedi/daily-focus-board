@@ -1,0 +1,3 @@
+This is my first Git update.
+I changed this file locally in VS Code.
+After commit and push, GitHub will show the new file.
